@@ -1,27 +1,26 @@
-/* Мінімалістичний CSS-reset і базові стилі */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Встановлюємо box-sizing */
 html {
   box-sizing: border-box;
   font-size: 16px;
+  background-color: #fef0e8;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 
-*, *::before, *::after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* Стилі для body */
 body {
   margin: 1rem;
-  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
-  color: #222;
-  background-color: #fff;
+  min-height: 100vh;
+  background-color: #fef0e8;
 }
 
-/* Зробити зображення і відео адаптивними */
 img,
 video {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }

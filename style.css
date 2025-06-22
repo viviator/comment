@@ -1,25 +1,27 @@
-/* a minimalist set of CSS resets */
+/* Мінімалістичний CSS-reset і базові стилі */
 
-/* default to border-box */
+/* Встановлюємо box-sizing */
 html {
   box-sizing: border-box;
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
-/* adjust typography defaults */
+/* Стилі для body */
 body {
   margin: 1rem;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
+  color: #222;
+  background-color: #fff;
 }
 
-/* images and videos max out at full width */
+/* Зробити зображення і відео адаптивними */
 img,
 video {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
